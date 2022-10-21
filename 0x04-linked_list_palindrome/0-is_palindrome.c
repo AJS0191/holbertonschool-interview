@@ -57,10 +57,11 @@ for (i = 0, j = len - 1; i < len / 2; i++, j--)
 {
     if (arr[i] != arr[j])
     {
+        free(arr);
         return 0;
     }
     
 };
-
+free(arr);
 return 1;
 }
