@@ -9,7 +9,7 @@ listint_t *trav;
 int *arr;
 int i = 0;
 int j;
-int len;
+int len = 0;
 
 trav = *head;
 while (trav != NULL)
