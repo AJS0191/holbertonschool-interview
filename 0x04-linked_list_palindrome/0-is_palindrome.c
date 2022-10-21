@@ -56,8 +56,10 @@ while (trav != NULL)
     trav = trav->next;
 }
 
+printf("This is the new list:");
 while (trav != NULL)
 {
+    printf("%i", pali->n);
     if (trav->n != pali->n)
     {
         return 0;
@@ -67,11 +69,7 @@ while (trav != NULL)
         trav = trav->next;
         pali = pali->next;
     }
-}
+};
 
-printf("This is the new list:");
-print_listint1(&pali);
-printf("This is the old list:");
-print_listint1(&head);
 return 1;
 }
