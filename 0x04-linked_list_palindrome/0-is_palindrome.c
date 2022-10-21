@@ -54,6 +54,8 @@ while (trav != NULL)
         pali = pali->next;
     }
 }
+pali1 = pali;
+head1 = head;
 printf("This is the new list:");
 print_listint(pali1);
 printf("This is the old list:");
