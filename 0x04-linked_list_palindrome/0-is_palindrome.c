@@ -1,6 +1,22 @@
 #include "lists.h"
 #include <stdio.h>
 
+size_t print_listint1(listint_t *h)
+{
+    const listint_t *current;
+    unsigned int n; /* number of nodes */
+
+    current = h;
+    n = 0;
+    while (current != NULL)
+    {
+        printf("%i\n", current->n);
+        current = current->next;
+        n++;
+    }
+
+    return (n);
+}
 /**
  * add_node - adds a node to a linked list
  *
@@ -31,8 +47,6 @@ int is_palindrome(listint_t **head)
 {
 listint_t *pali;
 listint_t *trav;
-const listint_t *pali1;
-const listint_t *head1;
 
 pali = NULL;
 trav = *head;
@@ -54,11 +68,10 @@ while (trav != NULL)
         pali = pali->next;
     }
 }
-pali1 = pali;
-head1 = head;
+
 printf("This is the new list:");
-print_listint(pali1);
+print_listint(pali);
 printf("This is the old list:");
-print_listint(head1);
+print_listint(head);
 return 1;
 }
