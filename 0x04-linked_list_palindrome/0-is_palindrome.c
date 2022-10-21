@@ -28,14 +28,12 @@ listint_t *add_node(listint_t **head, int n)
 
 int is_palindrome(listint_t **head)
 {
-//make a linked list
 listint_t *pali;
 listint_t *trav;
 listint_t *list = head;
 
 print_listint(head);
 pali = NULL;
-//adding every value in current into the new list backwards
 trav = head;
 while (trav != NULL)
 {
