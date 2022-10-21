@@ -36,7 +36,7 @@ pali = NULL;
 trav = *head;
 while (trav != NULL)
 {
-    pali = add_node(&pali, trav->n);
+    pali = add_nodeint_end(&pali, trav->n);
     trav = trav->next;
 }
 
