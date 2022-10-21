@@ -36,7 +36,7 @@ pali = NULL;
 trav = *head;
 while (trav != NULL)
 {
-    pali = add_nodeint_end(&pali, trav->n);
+    pali = add_node(&pali, trav->n);
     trav = trav->next;
 }
 
@@ -52,5 +52,9 @@ while (trav != NULL)
         pali = pali->next;
     }
 }
+printf("This is the new list:");
+print_listint(pali);
+printf("This is the old list:");
+print_listint(head);
 return 1;
 }
