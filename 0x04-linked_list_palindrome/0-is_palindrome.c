@@ -19,7 +19,7 @@ while (trav != NULL)
 }
 
 arr = malloc(sizeof(int)* len);
-if (arr = NULL)
+if (arr == NULL)
 {
     return 0;
 }
