@@ -7,7 +7,7 @@ int is_palindrome(listint_t **head)
 {
 listint_t *trav;
 int *arr;
-int i = 0;
+int i;
 int j;
 int len = 0;
 
@@ -19,14 +19,15 @@ while (trav != NULL)
 }
 
 arr = malloc(sizeof(int)* len);
-if (!arr)
+if (arr = NULL)
 {
     return 0;
 }
-
+trav = *head;
 for (i = 0; i < len; i++)
 {
     arr[i] = trav->n;
+    trav = trav->next;
 }
 
 for (i = 0, j = len - 1; i < len / 2; i++, j--)
