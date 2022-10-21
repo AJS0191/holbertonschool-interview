@@ -30,9 +30,8 @@ int is_palindrome(listint_t **head)
 {
 listint_t *pali;
 listint_t *trav;
-const listint_t *list = *head;
 
-print_listint(list);
+
 pali = NULL;
 trav = *head;
 while (trav != NULL)
