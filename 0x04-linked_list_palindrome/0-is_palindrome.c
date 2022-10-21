@@ -70,8 +70,8 @@ while (trav != NULL)
 }
 
 printf("This is the new list:");
-print_listint(pali);
+print_listint1(pali);
 printf("This is the old list:");
-print_listint(head);
+print_listint1(head);
 return 1;
 }
