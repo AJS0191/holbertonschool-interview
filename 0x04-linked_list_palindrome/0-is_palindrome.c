@@ -31,7 +31,8 @@ int is_palindrome(listint_t **head)
 {
 listint_t *pali;
 listint_t *trav;
-
+const listint_t *pali1;
+const listint_t *head1;
 
 pali = NULL;
 trav = *head;
@@ -54,8 +55,8 @@ while (trav != NULL)
     }
 }
 printf("This is the new list:");
-print_listint(pali);
+print_listint(pali1);
 printf("This is the old list:");
-print_listint(head);
+print_listint(head1);
 return 1;
 }
